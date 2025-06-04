@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header {
+    height: 124px;
+
+}
+
+.header-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.main {
+
+}
+
+.container {
+    height: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.footer {
+    height: 156px;
+}
+
+.footer-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+
+}
+
+.footer-nav {
+    flex-grow: 1;
+    /* растягивает контэйнер во всю ширину доступную ему */
+}
