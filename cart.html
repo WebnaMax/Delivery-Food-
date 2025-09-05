@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="header-logo logo">
+                    <a href="main.html"><img src="./images/logo.png" alt="header logo"></a>
+                </div>
+                <div class="header-controls">
+                    <button class="btn btn-primary">
+                        <img src="./images/icons/account.svg" alt="account">
+                        Войти
+                    </button>
+                    <button class="btn btn-outline cart-btn">
+                        <img src="./images/icons/cart.svg" alt="cart">
+                        Корзина
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-modal__overlay">
+            <div class="cart-modal">
+                <div class="cart-modal__header">
+                    <h2 class="cart-modal__header--title">Корзина</h2>
+                    <!-- <span class="cart-modal__header--close">
+                        <img src="./images/icons/close.svg" alt="">
+                    </span> -->
+                </div>
+                <div class="cart-modal__body"></div>
+                <div class="cart-modal__footer">
+                    <div class="cart-modal__footer--price">0 ₽</div>
+                    <div class="cart-modal__footer--controls">
+                        <button class="btn btn-primary btn-confirm">
+                            Оформить заказ
+                        </button>
+                        <a href="goods.html"><button class="btn btn-outline">
+                            Отмена
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./cartData.js"></script>
+
+</body>
+</html>
