@@ -10,6 +10,7 @@
     <title>Корзина</title>
 </head>
 <body>
+<div class="page-wrapper">
     <header class="header">
         <div class="container">
             <div class="header-box">
@@ -21,31 +22,32 @@
                         <img src="./images/icons/account.svg" alt="account">
                         Войти
                     </button>
-                    <button class="btn btn-outline cart-btn">
-                        <img src="./images/icons/cart.svg" alt="cart">
-                        Корзина
-                    </button>
+                    <a href="cart.html" style="text-decoration: none;">
+                        <button class="btn btn-outline cart-btn">
+                            <img src="./images/icons/cart.svg" alt="cart">
+                            Корзина <span class="cart-count">0</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="cart-modal__overlay">
+        <div class="cart-modal__overlay open">
             <div class="cart-modal">
                 <div class="cart-modal__header">
                     <h2 class="cart-modal__header--title">Корзина</h2>
-                    <!-- <span class="cart-modal__header--close">
-                        <img src="./images/icons/close.svg" alt="">
-                    </span> -->
                 </div>
-                <div class="cart-modal__body"></div>
+                <div class="cart-modal__body">
+
+                </div>
                 <div class="cart-modal__footer">
                     <div class="cart-modal__footer--price">0 ₽</div>
                     <div class="cart-modal__footer--controls">
                         <button class="btn btn-primary btn-confirm">
                             Оформить заказ
                         </button>
-                        <a href="goods.html"><button class="btn btn-outline">
+                        <a href="goods.html" style="text-decoration: none;"><button class="btn btn-outline">
                             Отмена
                         </button></a>
                     </div>
@@ -53,6 +55,30 @@
             </div>
         </div>
     </main>
-    <script src="./cartData.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-logo logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="header logo"></a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="goods.html">Ресторанам</a></li>
+                        <li><a href="goods.html">Курьерам</a></li>
+                        <li><a href="goods.html">Пресс-центр</a></li>
+                        <li><a href="goods.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <img src="./images/social/instagram.svg" alt="instagram">
+                    <img src="./images/social/facebook.svg" alt="facebook">
+                    <img src="./images/social/vk.svg" alt="vk">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+<script src="cartData.js"></script>
 </body>
 </html>

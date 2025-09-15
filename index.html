@@ -22,9 +22,11 @@
                             <img src="./images/icons/account.svg" alt="account">
                             Войти
                         </button>
-                        <a href="cart.html"><button class="btn btn-outline cart-btn" >
-                            <img src="./images/icons/cart.svg" alt="cart">
-                            Корзина
+                        <a href="cart.html" style="text-decoration: none;">
+                            <button class="btn btn-outline cart-btn">
+                                <img src="./images/icons/cart.svg" alt="cart">
+                                Корзина <span class="cart-count">0</span>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -46,15 +48,10 @@
             <section class="products">
                 <div class="container">
                     <div class="products-header">
-                        <div class="products-header--title">
-                            Рестораны
-                        </div>
-                        <input 
-                            type="text" 
-                            placeholder="Поиск блюд и ресторанов"
-                            class="products-header--search"
-                        />
+                        <div class="products-header--title">Рестораны</div>
+                        <input type="text" placeholder="Поиск блюд и ресторанов" class="products-header--search"/>
                     </div>
+                    <div class="products-wrapper" id="rests-container"></div>
                 </div>
             </section>
         </main>
